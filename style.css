@@ -8,7 +8,7 @@
 .home-page{
     position: sticky;
     top: 0;
-    z-index: -1;
+    z-index: 1;
     width: 100%;
     height: 100vh;
     background-image: url(images/HOD-Banner-Right.jpg);
@@ -111,6 +111,8 @@
     height: 100vh;
     background-color: white;
     padding: 100px;
+    position: relative;
+    z-index: 2; 
 }
 .online-streaming span{
     font-size: 23px;
@@ -198,4 +200,107 @@
 .play-btn:hover{
     background-color: red;
     color: white;
+}
+
+
+
+
+/* ============================================================================= */
+.movies{
+    background-color: #111111;
+    position: relative;
+    z-index: 2;
+    padding: 100px;
+}
+.movies p{
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-size: 23px;
+    font-weight: 600;
+}
+.movies h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.movie-container{
+    margin-top: 30px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(6, 1fr);
+}
+.movie-image{
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.movie-image1{background-image: url(images/online-movie4.jpg);}
+.movie-image2{background-image: url(images/online-movie3.jpg);}
+.movie-image3{background-image: url(images/online-movie2.jpg);}
+.movie-image4{background-image: url(images/online-movie1.jpg);}
+.movie-image5{background-image: url(images/online-movie4.jpg);}
+.movie-image6{background-image: url(images/online-movie3.jpg);}
+.movie-image7{background-image: url(images/online-movie2.jpg);}
+.movie-image8{background-image: url(images/online-movie1.jpg);}
+.movie-image9{background-image: url(images/online-movie4.jpg);}
+.movie-image10{background-image: url(images/online-movie3.jpg);}
+.movie-image11{background-image: url(images/online-movie2.jpg);}
+.movie-image12{background-image: url(images/online-movie1.jpg);}
+.movie-image div{
+    display: flex;
+    align-items: end;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.movie-image div:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.399);
+}
+.movie-image div img{
+    width: 45px;
+}
+
+.detail div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+}
+.detail div span:first-child{
+    border: 1px solid white;
+    padding: 2px;
+}
+.category{
+    color: red !important;
+    font-size: 17px !important;
+    text-align: left !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.movie-title{
+    font-size: 25px;
+    color: white;
+}
+.BROWS-ALL-MOVIES{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.BROWS-ALL-MOVIES button{
+    font-size: 23px;
+    padding: 18px 45px 18px 45px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+.BROWS-ALL-MOVIES button:hover{
+    background-color: transparent;
 }
