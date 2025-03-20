@@ -304,3 +304,9 @@
 .BROWS-ALL-MOVIES button:hover{
     background-color: transparent;
 }
+
+
+/* ================================================================= */
+.audio-image{
+    width: 150px !important;
+}
