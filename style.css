@@ -399,3 +399,99 @@
     margin-top: 10px;
     color: rgb(145, 145, 145);
 }
+
+
+
+
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #212121;
+    position: relative;
+    z-index: 2;
+    padding: 100px;
+}
+.footer h3{
+    text-align: center;
+    font-size: 45px;
+    color: white;
+}
+.footer .title-desc{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 20px;
+}
+.contact-form input{
+    width: 600px;
+    font-size: 20px;
+    padding: 30px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.contact-form button{
+    font-size: 20px;
+    width: 180px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: 700;
+}
+.line{
+    width: 100%;
+    height: 0.5px;
+    background-color: rgb(145, 145, 145);
+    margin: 80px 0 80px 0;
+}
+
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.menu1{
+    grid-column: span 2;
+}
+.menu1 p:first-child{
+    font-size: 24px;
+    text-align: left;
+    color: white;
+}
+.menu1 .menu-desc{
+    text-align: left;
+    font-size: 19px;
+    margin-top: 15px;
+    color: white;
+}
+.select{
+    width: 150px;
+    border: 1px solid #a5a5a5;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 25px 14px 25px;
+    margin-top: 30px;
+}
+.select span{
+    color: white;
+}
+
+.menu2 p{
+    color: white;
+    font-size: 24px;
+}
+.menu2 ul{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.menu2 ul li{
+    color: white;
+    margin-top: 8px;
+}
